@@ -9,24 +9,28 @@ extensnion of FDL with **statically inferred types**.
 
 ## Recommended TODO List
 
+The parentheses indicate the number of lines needed to implement the feature.
+
 1. Copy over the relevant compilation code from `fdl`
     - Modify tuple implementation to work for pairs
     - You can remove the dynamic tests (except overflow!)
 
 2. Fill in the definitions for `prim2Poly` and `ifPoly`
-   to get inference for `Prim2`, `If`.
+   to get inference for `Prim2`, `If`. **(7 lines)** 
 
 3. Complete `tupPoly` and `fieldPoly` and `unify:ctor`
-   to get inference for pairs.
+   to get inference for pairs. **(5 lines)**
 
 4. Copy (and modify!) the code from lecture to get `ti:lam` to
-   get inference for lambda; extend and refactor it to complete `ti:infer` to get inference for (recursive) `def` functions.
+   get inference for lambda; extend and refactor it to 
+   complete `ti:infer` to get inference for (recursive) `def` functions.
+   **(20-30 lines)**
 
 5. Complete `unify:ctor` to get inference for constructors
-   (e.g. `List[a]`).
+   (e.g. `List[a]`). **(2 lines)** 
 
 6. Complete `ti:check` to implement **checking** of
-   user-specified types **(extra credit)**
+   user-specified types **(25-30 lines / extra credit)**
 
 ## Language
 
