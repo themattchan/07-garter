@@ -1,6 +1,6 @@
 # Garter
 
-![A Garter Snake](https://en.wikipedia.org/wiki/Garter_snake#/media/File:Coast_Garter_Snake.jpg)
+![A Garter Snake](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Coast_Garter_Snake.jpg/1920px-Coast_Garter_Snake.jpg)
 
 **DUE Sunday 12/4/2016 at 23:59:59**
 
