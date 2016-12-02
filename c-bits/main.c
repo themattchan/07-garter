@@ -76,13 +76,10 @@ void print_boolean(int val){
 
 void print_tuple(int val){
   int *base = (int *) (val - 1);
-  int size = (*base) >> 1;
   printf("(");
+  print_val(base[0]);
+  printf(", ");
   print_val(base[1]);
-  for (int i = 2; i <= size; i++){
-    printf(", ");
-    print_val(base[i]);
-  }
   printf(")");
 }
 
