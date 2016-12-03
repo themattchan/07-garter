@@ -1,4 +1,4 @@
-def null() as forall a. () => Fist[a]:
+def null() as forall a. () => List[a]:
   false
 in
 
