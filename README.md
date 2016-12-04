@@ -337,7 +337,7 @@ forall a. (a) => a
 is identical to
 
 ```
-forall z. (z) => a
+forall z. (z) => z
 ```
 
 + A **bound** type variable is one that appears under a `forall`.
