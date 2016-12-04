@@ -997,18 +997,13 @@ This is a bit tricky, and so am leaving it as **Extra Extra Credit**.
 $ stack ghci
 ```
 
-and then you are inside `ghci` where you can use the function `run` to
+and then you are inside `ghci` where you can use the functions `exec` and `run` to
 **rapidly** test your code.
-
-```
-λ> :t run
-run :: FilePath -> Program -> IO Result
-```
 
 For example to directly compile and run a string do:
 
 ```
-λ> run "" (Code "1 + 2")
+λ> exec "1 + 2"
 ```
 
 To run a program whose code is in a file `tests/input/file.fdl` do:
