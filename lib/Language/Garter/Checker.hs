@@ -244,7 +244,7 @@ tiApp sp su env tF eIns   = (su''', apply su''' tOut)
 prim1Poly :: Prim1 -> Poly
 prim1Poly Add1  = Forall [   ] ([TInt] :=> TInt)
 prim1Poly Sub1  = Forall [   ] ([TInt] :=> TInt)
-prim1Poly Print = Forall [TV "a"] ([TVar (TV "a")] :=> TVar (TV "a"))
+prim1Poly Print = Forall ["a"] (["a"]  :=> "a")
 
 prim2Poly :: Prim2 -> Poly
 prim2Poly Plus    = error "TBD:prim2Poly"
