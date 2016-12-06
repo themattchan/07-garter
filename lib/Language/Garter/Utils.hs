@@ -20,10 +20,7 @@ import           Debug.Trace (trace)
 --------------------------------------------------------------------------------
 (>->) :: (a -> Either e b) -> (b -> c) -> a -> Either e c
 --------------------------------------------------------------------------------
-f >-> g = f >=> safe g
-  where
-    safe :: (a -> b) -> a -> Either c b
-    safe h x = Right (h x)
+f >-> g = fmap g . f
 
 groupBy :: (Ord k) => (a -> k) -> [a] -> [(k, [a])]
 groupBy f = M.toList . L.foldl' (\m x -> inserts (f x) x m) M.empty
